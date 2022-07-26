@@ -56,3 +56,41 @@ public:
             dup_nums[index+l]=temp[index];
     }
 };
+
+/*
+//Brute force solution
+#include<iostream>
+#include<vector>
+using namespace std;
+
+vector<int> countSmaller(vector<int>& nums) {
+	int s = nums.size();
+	vector<int> x;
+	int count = 0;
+	for (int i = 0; i < s - 1; i++) {
+		for (int j = i + 1; j < s; j++) {
+			if (nums[j] < nums[i]) {
+				count++;
+			}
+		}
+		x.push_back(count);
+		count = 0;
+	}
+	x.push_back(0);
+	return x;
+}
+
+
+int main() {
+
+	vector<int> test = { 5,2,6,1 };
+	vector<int> x = countSmaller(test);
+	for (int k = 0; k < x.size(); k++) {
+		cout << x[k] << ",";
+	}
+}
+
+
+
+
+*/
