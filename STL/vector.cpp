@@ -36,3 +36,6 @@ vector<int>::reverse_iterator it;
 	v.shrink_to_fit();
 
 }
+//minmax
+auto p = minmax_element(v.begin(),v.end()-1);
+	cout << *p.first << "," << *p.second;
