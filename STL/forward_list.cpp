@@ -25,6 +25,10 @@ int main() {
 	
 	n.splice_after(n.before_begin(), m);
 
+	/* ------------------------------------------------------------------to add at the end------------------------------------------------------------------
+	it = next(it, 5);
+	n.splice_after(it, m)
+	*/
 	for (int i : n) {
 		cout << i << endl;
 	}
