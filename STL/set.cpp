@@ -22,4 +22,8 @@ int main() {
 	for (auto itt = s.begin(); com(*itt, c); itt++) {
 		cout << *itt << endl;
 	}
+	
+	//there is multiset which is not unique
+	multiset<int> s2 = {20,20,20,30,10,5,15,45,25,60,50};
+
 }
