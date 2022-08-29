@@ -11,8 +11,20 @@ int main() {
 	m1[1] = "mostafa";
 	m1.insert({ 120, "hi" });
 	cout << "----------------------------------------------------------------------" << endl;
+	
 	for (auto i : m1) {
 		cout << "Your id is: " << i.first << ", and my name is: " << i.second << endl;
+	}
+	cout << "----------------------------------------------------------------------" << endl;
+		// Key Compare
+	
+	map<char, int> m1 = { {'a',98},{'b',70},{'d',60},{'h',23},{'z',40},{'r',25} };
+	map<char, int>::key_compare com = m1.key_comp();
+	auto it = m1.begin();
+	char c = 'c';
+
+	for (; com(it->first, c); it++) {
+		cout << it->first << "," << it->second << endl;
 	}
 
 }
