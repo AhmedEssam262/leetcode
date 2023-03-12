@@ -8,8 +8,6 @@ public:
 	vector<char> temp1;
 	vector<char> temp2;
 	for (int i = 0; i < s1.size(); i++) {
-		if (dif > 2)
-			return false;
 		if (s1[i] == s2[i])
 			continue;
 		else {
